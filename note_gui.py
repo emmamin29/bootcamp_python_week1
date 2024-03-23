@@ -5,7 +5,8 @@ from tkinter.filedialog import *
 def new_file():
     #텍스트 영역 지우기
     text_area.delete(1.0, END)
-    
+
+#파일 저장하기
 def save_file():
     f = asksaveasfile(mode='w', defaultextension=".txt", filetypes=[('Text files', '.txt')])
     text_save = str(text_area.get(1.0, END))
